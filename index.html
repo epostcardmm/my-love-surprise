@@ -13,7 +13,7 @@
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Pyidaungsu', 'Padauk', sans-serif; }
         body {
-            background: linear-gradient(-45deg, #ff9a9e, #fecfef, #feada6, #f5efef);
+            background: linear-gradient(-45deg, #8ec5fc, #e0c3fc, #fbc2eb, #a6c1ee);
             background-size: 400% 400%;
             animation: gradientBG 12s ease infinite;
             display: flex; justify-content: center; align-items: center; min-height: 100vh; overflow-x: hidden; padding: 15px;
@@ -126,19 +126,19 @@
     <script>
         const formspreeUrl = "";
         const warnings = ["⚠️ No နှိပ်လို့ မရပါဘူးနော်!","⚠️ Yes ပဲ နှိပ်ပါ! 🥺","⚠️ No ကို နှိပ်ခွင့် မရှိပါဘူး! 💖","⚠️ တကယ်ကြီး No နှိပ်မှာလား? 😭"];
-        const steps = [{"id":1,"text":"ပြန််ချစ်ကြည့်ကြမလား ရည်းစားဟောင်းလေး 💕","gif":"https://media.tenor.com/qQmsOJoeMoMAAAAi/dudu-bubu.gif","behavior":"guilttrip"},{"id":2,"text":"တကယ် ပြန်လာမှာလား ဟိဟိ... 🥺","gif":"https://media.tenor.com/nA5iSpAftHAAAAAi/bubu-dudu.gif","behavior":"shrinking"},{"id":3,"text":"အရင်ထပ်ပိုချစ်ပေးပါမယ်နော်? 💖","gif":"https://media.tenor.com/xxtopNzO7jsAAAAi/bubu-dudu.gif","behavior":"shrinking"},{"id":4,"text":"ပြန်လာပေးလို့ ရော့အာဘွားယူ… 💕","gif":"https://media.tenor.com/_YoesJxE1tYAAAAj/panda-%C3%B6p%C3%BCc%C3%BCk.gif","behavior":"fleeing"}];
+        const steps = [{"id":1,"text":"ပြန်ချစ်ကြရအောင်လေ ရည်းစားဟောင်းလေး 🩷","gif":"https://media.tenor.com/xxtopNzO7jsAAAAi/bubu-dudu.gif","behavior":"guilttrip"},{"id":2,"text":"အတည်ပြန်လာမှာလား 🤭","gif":"https://media.tenor.com/nA5iSpAftHAAAAAi/bubu-dudu.gif","behavior":"teleport"},{"id":3,"text":"အရင်ထပ်ပိုချစ်ပေးမယ် ယုံလိုက် 🥹🩷","gif":"https://media.tenor.com/Lgr_6-nkvnUAAAAi/casal-dudu.gif","behavior":"shrinking"},{"id":4,"text":"ပြန်လာပေးလို့ ရော့ အာဘွားယူ","gif":"https://media.tenor.com/_YoesJxE1tYAAAAj/panda-%C3%B6p%C3%BCc%C3%BCk.gif","behavior":"fleeing"}];
         
         const yesText = "Yes";
-        const yesBg = "#424fff";
+        const yesBg = "#ff416c";
         const yesColor = "#ffffff";
         const yesFontSize = "18";
 
         const noText = "No";
-        const noBg = "#338a4d";
+        const noBg = "#6a11cb";
         const noColor = "#ffffff";
         const noFontSize = "18";
 
-        const questionFontSize = "25";
+        const questionFontSize = "20";
 
         const cardStyle = "env-classic-gold";
         const paperStyle = "paper-grid";
@@ -147,8 +147,8 @@
         const letterTitle = "💌 ချစ်ရပါသော…ရည်းစားဟောင်းလေးရေ 💌";
         const letterP1 = "ဒီကမ္ဘာပေါ်မှာ လူတွေအများကြီးရှိတဲ့ထဲကမှ မင်းနဲ့ဆုံတွေ့ခွင့်ရခဲ့တာဟာ ငါ့အတွက်တော့ အလှပဆုံးသော ကံကြမ္မာတစ်ခုပါပဲ။";
         const letterP2 = "အမြဲတမ်း ပျော်ရွှင်အောင်ထားပေးမယ်လို့ ကတိမပေးနိုင်ရင်တောင်မှ မင်းဝမ်းနည်းတဲ့အခါတိုင်း သို့မဟုတ် ခက်ခဲတဲ့အချိန်တိုင်းမှာ အနားမှာ အမြဲရှိနေပေးမယ့်သူတစ်ယောက် ဖြစ်ပါရစေ။";
-        const letterP3 = "ပြန်လာပေးပါနော်… 🌹✨";
-        const letterSig = "love you so much❤️";
+        const letterP3 = "ပြန်လာပေးပါနော် … 🌹✨";
+        const letterSig = "Love You ❤️";
 
         function getRandomWarning() {
             if(!warnings || warnings.length === 0) return "⚠️ No နှိပ်လို့ မရပါဘူးနော်!";
